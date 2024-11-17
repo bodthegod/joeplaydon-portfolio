@@ -125,26 +125,9 @@ export const Substack = ({ newsletter }: { newsletter: NewsletterProps }) => {
         }}
         onSubmit={handleSubmit}
       >
-        <Flex fillWidth maxWidth={24} gap="8">
-          <Input
-            id="email"
-            formNoValidate
-            labelAsPlaceholder
-            type="email"
-            label="Email"
-            required
-            onChange={(e) => {
-              if (error) {
-                handleChange(e);
-              } else {
-                debouncedHandleChange(e);
-              }
-            }}
-            onBlur={handleBlur}
-            error={error}
-          />
-          <Flex height="48" alignItems="center">
-            <Button type="submit" size="m" fillWidth>
+        <Flex fillWidth maxWidth={24} gap="8" justifyContent="center">
+          <Flex height="48" alignItems="center" style={{ width: "auto" }}>
+            <Button type="submit" size="m">
               {t("newsletter.button")}
             </Button>
           </Flex>
