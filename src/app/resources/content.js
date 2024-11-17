@@ -21,6 +21,7 @@ const newsletter = {
       take on the intersection of psychology and technology.
     </>
   ),
+  url: "https://substack.com/@joeplaydon",
 };
 
 const social = [

@@ -57,7 +57,8 @@ const display = {
 };
 
 const mailchimp = {
-  action: "https://url/subscribe/post?parameters",
+  action:
+    "https://joeplaydon.substack.com/subscribe?next=https%3A%2F%2Fsubstack.com%2F%40joeplaydon%3Femail%3D&utm_source=profile-page&utm_medium=web&utm_campaign=substack_profile&just_signed_up=true",
   effects: {
     mask: "topRight", // none | cursor | topLeft | topRight | bottomLeft | bottomRight
     gradient: {
