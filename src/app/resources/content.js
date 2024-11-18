@@ -193,9 +193,9 @@ const about = {
         title: "Blockchain Integration",
         description: (
           <>
-            Experience integrating Corda 5 blockchain technology with frontend
-            applications, implementing secure transaction processing and
-            distributed ledger functionality.
+            Experience integrating Corda 5 and Solana Web3 blockchain technology
+            with frontend applications, implementing secure transaction
+            processing and distributed ledger functionality.
           </>
         ),
         images: [], // Add relevant screenshots
