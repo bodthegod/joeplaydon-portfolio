@@ -26,14 +26,13 @@ We structured our application across three main repositories:
 
 - Next.js for server-side rendering and optimal performance
 - Wallet adapter integration for seamless Web3 connectivity
-- Real-time data updates using regular posts per transaction
+- Real-time data updates using WebSocket connections
 - State management for complex user interactions
 - Loading states and error boundaries for robust UX
-- Google Analytics for tracking user behavior
 
 ### GraphQL API Layer
 
-- Type-safe schema design
+- Type-safe schema design using TypeGraphQL
 - Efficient data relationships modeling
 - Optimized query resolution
 - Caching strategies for frequently accessed data
@@ -43,7 +42,7 @@ We structured our application across three main repositories:
 
 - Custom Solana RPC node integration
 - Transaction processing pipeline
-- Data aggregation and business logic integration
+- Data aggregation and analysis system
 - Points calculation engine
 - Database optimization strategies
 
@@ -60,6 +59,7 @@ We implemented several strategies to minimize RPC calls:
 - Custom caching layer for frequently accessed data
 - Batch processing of transactions
 - Intelligent polling based on block time
+- WebSocket subscriptions for real-time updates
 
 ### Database Optimization
 
@@ -72,8 +72,7 @@ We implemented several strategies to minimize RPC calls:
 
 Working with blockchain data required careful attention to:
 
-- Txid verification and anti-spoofing
-- Anti-spam measures
+- Signature verification
 - Rate limiting strategies
 - Data validation
 - Protected API endpoints
@@ -109,13 +108,13 @@ We implemented a robust CI/CD pipeline:
 
 Looking ahead, we identified several areas for enhancement:
 
-- Handling data server-side, to prevent any data manipulation client-side
+- Implementation of layer 2 solutions for better scaling
 - Advanced caching strategies
 - More sophisticated points calculation algorithms
 - Enhanced analytics capabilities
 
 ## Conclusion
 
-Building this Web3 application taught us valuable lessons about scaling, performance, and architecture. The key takeaway? Success in Web3 development comes from carefully balancing user experience, technical performance, reliability and most importantly, MARKETING.
+Building this Web3 application taught us valuable lessons about scaling, performance, and architecture. The key takeaway? Success in Web3 development comes from carefully balancing user experience, technical performance, and system reliability.
 
-This was the turning point for me, and I'm excited to see what the future holds. I aspire to continue building apps that have just as large of a scope as this one.
+The blockchain space moves quickly, and what works today might need adaptation tomorrow. But the fundamental principles of good system design—separation of concerns, efficient data management, and robust error handling—remain crucial for building successful Web3 applications.
