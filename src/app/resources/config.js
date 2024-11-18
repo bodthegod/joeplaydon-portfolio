@@ -14,7 +14,7 @@ const routes = {
   "/about": true,
   "/work": true,
   "/blog": true,
-  "/gallery": true,
+  "/gallery": false,
 };
 
 // Enable password protection on selected routes
@@ -42,8 +42,8 @@ const effects = {
 const style = {
   theme: "dark", // dark | light
   neutral: "gray", // sand | gray | slate
-  brand: "indigo", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
-  accent: "magenta", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
+  brand: "violet", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
+  accent: "violet", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
   solid: "contrast", // color | contrast
   solidStyle: "flat", // flat | plastic
   border: "playful", // rounded | playful | conservative
@@ -60,7 +60,7 @@ const mailchimp = {
   action:
     "https://joeplaydon.substack.com/subscribe?next=https%3A%2F%2Fsubstack.com%2F%40joeplaydon%3Femail%3D&utm_source=profile-page&utm_medium=web&utm_campaign=substack_profile&just_signed_up=true",
   effects: {
-    mask: "topRight", // none | cursor | topLeft | topRight | bottomLeft | bottomRight
+    mask: "cursor", // none | cursor | topLeft | topRight | bottomLeft | bottomRight
     gradient: {
       display: true,
       opacity: 0.6, // 0 - 1
