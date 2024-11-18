@@ -6,7 +6,7 @@ summary: "A deep dive into building a scalable Web3 application: from system des
 tag: "Technical"
 ---
 
-Building Web3 applications presents unique challenges that go beyond traditional web development. In this post, I'll share my experience architecting a Solana-based airdrop system that processed on-chain data for thousands of users. Let's dive into the technical decisions, challenges, and solutions that shaped this project.
+Building Web3 applications presents unique challenges that go beyond traditional web development. In this post, I'll share my experience architecting a Solana-based airdrop system that processed on-chain data for thousands of users.
 
 ## The Challenge
 
@@ -48,30 +48,7 @@ We structured our application across three main repositories:
 
 ## Database Schema Design
 
-One of our biggest challenges was designing a schema that could efficiently handle:
-
-typescript
-interface WalletActivity {
-address: string;
-transactions: Transaction[];
-tradingVolume: {
-daily: number;
-weekly: number;
-total: number;
-};
-points: {
-trading: number;
-staking: number;
-referral: number;
-};
-}
-
-We needed to optimize for:
-
-- Quick lookups of user activity
-- Efficient aggregation of trading volumes
-- Real-time points calculations
-- Historical data access
+One of our biggest challenges was designing a schema that could efficiently handle wallet activities and transactions.
 
 ## Performance Optimization
 
@@ -141,5 +118,3 @@ Looking ahead, we identified several areas for enhancement:
 Building this Web3 application taught us valuable lessons about scaling, performance, and architecture. The key takeaway? Success in Web3 development comes from carefully balancing user experience, technical performance, and system reliability.
 
 The blockchain space moves quickly, and what works today might need adaptation tomorrow. But the fundamental principles of good system design—separation of concerns, efficient data management, and robust error handling—remain crucial for building successful Web3 applications.
-
-Would you like to learn more about any specific aspect of this architecture? Feel free to reach out!
